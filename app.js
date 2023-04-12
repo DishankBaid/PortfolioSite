@@ -1,7 +1,6 @@
 window.addEventListener("scroll",()=>{
     const header=document.querySelector('header');
      header.classList.toggle('sticky',window.scrollY>0);
-<<<<<<< HEAD
 })
 
 const serviceModals=document.querySelectorAll('.service-modal');
@@ -28,6 +27,3 @@ modalclosebtn.forEach((btn,i)=>{
     });
 });
 
-=======
-})
->>>>>>> newone

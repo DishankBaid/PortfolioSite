@@ -493,6 +493,7 @@ header.sticky .nav-bar{
 }
 .service-modal{
     z-index: 999999;
+<<<<<<< HEAD
     position: fixed;
     width: 100%;
     height:100vh;
@@ -545,4 +546,6 @@ header.sticky .nav-bar{
 }
 .service-modal-body ul li i{
     color: var(--second-color);
+=======
+>>>>>>> newone
 }

@@ -37,19 +37,3 @@ scrollTopbtn.addEventListener('click',()=>{
     document.documentElement.scrollTop=0;
 })
 
-window.addEventListener("scroll",()=>{
-    const sections=document.querySelectorAll("section");
-    const scrollY=window.pageYOffset;
-    sections.forEach(current =>{
-        let sectionheight=current.offsetHeight;
-        let sectiontop=current.offsetTop;
-        let id=current.getAttribute('id');
-
-        if(scrollY >sectiontop && scrollY<=sectiontop+sectionheight) {
-             
-        }
-        else{
-            document.querySelector(".nav-items a[href*=" + id + "]").classList.remove("active");
-        }
-    })
-})

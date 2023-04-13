@@ -213,6 +213,7 @@ header{
     font-size: 4.5em;
     font-weight: 800;
     margin-bottom: 2rem;
+    background-clip: border-box;
     background: linear-gradient(to top,transparent 0%,var(--first-color) 70%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -664,6 +665,7 @@ footer a{
 .footer-container .about h2{
     font-size: 3em;
     font-weight: 600;
+    background-clip:unset ;
     background: linear-gradient(to top,transparent 0%,#fff 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

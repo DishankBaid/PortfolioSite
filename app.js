@@ -26,4 +26,3 @@ modalclosebtn.forEach((btn,i)=>{
         closemodal(i);
     });
 });
-

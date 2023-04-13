@@ -26,3 +26,30 @@ modalclosebtn.forEach((btn,i)=>{
         closemodal(i);
     });
 });
+
+const scrollTopbtn=document.querySelector('.scrollToTop-btn');
+window.addEventListener("scroll",()=>{
+    scrollTopbtn.classList.toggle('active',window.scrollY>500);
+})
+
+scrollTopbtn.addEventListener('click',()=>{
+    document.body.scrollTop=0;
+    document.documentElement.scrollTop=0;
+})
+
+window.addEventListener("scroll",()=>{
+    const sections=document.querySelectorAll("section");
+    const scrollY=window.pageYOffset;
+    sections.forEach(current =>{
+        let sectionheight=current.offsetHeight;
+        let sectiontop=current.offsetTop;
+        let id=current.getAttribute('id');
+
+        if(scrollY >sectiontop && scrollY<=sectiontop+sectionheight) {
+             
+        }
+        else{
+            document.querySelector(".nav-items a[href*=" + id + "]").classList.remove("active");
+        }
+    })
+})

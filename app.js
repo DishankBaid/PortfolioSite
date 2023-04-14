@@ -26,3 +26,14 @@ modalclosebtn.forEach((btn,i)=>{
         closemodal(i);
     });
 });
+
+const scrollTopbtn=document.querySelector('.scrollToTop-btn');
+window.addEventListener("scroll",()=>{
+    scrollTopbtn.classList.toggle('active',window.scrollY>500);
+})
+
+scrollTopbtn.addEventListener('click',()=>{
+    document.body.scrollTop=0;
+    document.documentElement.scrollTop=0;
+})
+

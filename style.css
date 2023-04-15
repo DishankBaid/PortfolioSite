@@ -24,6 +24,25 @@
     --scroll-thumb-hover-color:#454f6b;
 }
 
+.dark-theme{
+    --first-color:#fff;
+    --second-color:#6a59d1;
+    --third-color:#a9afc3;
+
+    --body-bg-color:#0e1b31;
+    --card-bg-color:#132347;
+    --modal-bg-color:#102048;
+    --bg-transparent-color: rgba(255,255,255,0.1);
+    --transparent-color-01: rgba(255,255,255,0.1);
+    --line-color: #454f6b;
+
+    --color-filter:invert(0);
+
+    --scroll-bar-color: #c1ceff;
+    --scroll-thumb-color:#282f4e;
+    --scroll-thumb-hover-color:#454f6b;
+}
+
 *{
     margin:0;
     padding: 0;
@@ -42,6 +61,27 @@ body{
     transition: .5s ease;
 }
 
+.theme-btn{
+    z-index: 999999;
+    position: fixed;
+    top:100px;
+    right:0;
+    background: var(--transparent-color-02);
+    backdrop-filter: blur(20px);
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+    border-radius: 5px 0 0 5px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    padding: 8px;
+}
+.theme-btn .fa-sun ,.theme-btn.sun .fa-moon{
+    display: none;
+}
+.theme-btn.sun .fa-sun{
+    display: block;
+}
 a{
     text-decoration: none;
 }
@@ -734,4 +774,22 @@ footer a{
     opacity: 1;
 }
 
+@media screen and (max-width:1070px){
+     
+    .navigation{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        background: var(--transparent-color-01);
+    }
 
+    .nav-menu-btn{
+        background: url();
+    }
+
+}

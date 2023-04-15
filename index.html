@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+    <!-- Scroll-to-Top button -->
     <div class="scrollToTop-btn flex-center">
         <i class="fas fa-arrow-up"></i>
+    </div>
+    <!-- Dark-light theme button -->
+    <div class="theme-btn">
+        <i class="fa fa-moon"></i>
+        <i class="fa fa-sun"></i>   
     </div>
     <!-- header  -->
     <header>
@@ -18,7 +25,7 @@
             <a href="#" class="logo">Dishank</a>
             <div class="navigation">
                 <div class="nav-items">
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
                     <a href="#services">Services</a>
@@ -43,7 +50,7 @@
                 <a href="" class="btn">Contact me <i class="fas fa-arrow-circle-right"></i></a>
             </div>
             <div class="home-img">
-                <img src="goku.jpg" width="400px" height="300px" alt="img">
+                <img src="goku.jpg" width="450px" height="300px" alt="img">
             </div>
         </div>
         <a href="#about" class="scroll-down">Scroll Down<i class="fa fa-arrow-down"></i></a>
@@ -342,7 +349,6 @@
                     <ul>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
